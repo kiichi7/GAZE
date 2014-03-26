@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{68DB7C19-F486-6495-640A-C502E60D1E4D}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_5_2;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_WIN;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>D:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>D:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Inpla\Inpla.js" />
+     <Compile Include="Assets\Scripts\A\ACreatEyeball.js" />
+     <Compile Include="Assets\Scripts\A\AGUIDisplay.js" />
+     <Compile Include="Assets\Scripts\A\AMeCollision.js" />
+     <Compile Include="Assets\Scripts\A\AMeOut.js" />
+     <Compile Include="Assets\Scripts\A\AMove.js" />
+     <Compile Include="Assets\Scripts\A\APositionJudgment.js" />
+     <Compile Include="Assets\Scripts\A\ATheCollision.js" />
+     <Compile Include="Assets\Scripts\E\ECreatEyeball.js" />
+     <Compile Include="Assets\Scripts\E\EGUIDisplay.js" />
+     <Compile Include="Assets\Scripts\E\EMeCollision.js" />
+     <Compile Include="Assets\Scripts\E\EMove.js" />
+     <Compile Include="Assets\Scripts\E\EPositionLocked.js" />
+     <Compile Include="Assets\Scripts\E\ETheCollision.js" />
+     <Compile Include="Assets\Scripts\G\GCreatEyeball.js" />
+     <Compile Include="Assets\Scripts\G\GGUIDisplay.js" />
+     <Compile Include="Assets\Scripts\G\GMeCollision.js" />
+     <Compile Include="Assets\Scripts\G\GMove.js" />
+     <Compile Include="Assets\Scripts\G\GTheCollision.js" />
+     <Compile Include="Assets\Scripts\Z\ZCreatEyeball.js" />
+     <Compile Include="Assets\Scripts\Z\ZGUIDisplay.js" />
+     <Compile Include="Assets\Scripts\Z\ZMeCollision.js" />
+     <Compile Include="Assets\Scripts\Z\ZMove.js" />
+     <Compile Include="Assets\Scripts\Z\ZTheCollision.js" />
+     <Compile Include="Assets\Scripts\public\Controller.js" />
+     <Compile Include="Assets\Scripts\public\LookAt.js" />
+     <Compile Include="Assets\Scripts\public\Score.js" />
+     <Compile Include="Assets\Scripts\public\SkyBoxChooser.js" />
+     <Compile Include="Assets\Scripts\public\StartLookAt.js" />
+     <Compile Include="Assets\Scripts\public\StarterGUIDisplay.js" />
+     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{B98C943E-D0A0-DF85-E684-BA2BDB2FC3BB}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
